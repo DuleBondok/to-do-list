@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dule's ToDo List</title>
+</head>
+<body>
+    <div id="addProjectDiv">
+        <div id="addProjectForm">
+            <div id="addProjectFormUpper">
+                <p id="newProjectParagraph">New Project</p>
+            </div>
+            <div id="addProjectFormMiddle">
+                <p id="projectNameParagraph">Project title *</p>
+                <input id="projectNameInput" type="text" placeholder="e.g. Vacation" required>
+                <p id="projectIconParagraph">Project icon</p>
+                <div id="projectIcons">
+                    <img src="./images/home.png" id="homeIcon" class="allProjectIcons">
+                    <img src="./images/work.png" id="workIcon" class="allProjectIcons">
+                    <img src="./images/vacation.png" id="vacationIcon" class="allProjectIcons">
+                    <img src="./images/gym.png" id="gymIcon" class="allProjectIcons">
+                    <img src="./images/school.png" id="schoolIcon" class="allProjectIcons">
+                </div>
+
+            </div>
+            <div id="addProjectFormDown">
+                <button id="closeProjectButton">Close</button>
+                <button id="addProjectFinal">Add</button>
+            </div>
+        </div>
+
+    </div>
+    <div id="addTaskDiv">
+        <div id="addTaskForm">
+            <div id="addTaskFormUpper">
+                <p id="newTaskParagraph">New Task</p>
+            </div>
+            <div id="addTaskFormMiddle">
+                <p id="taskNameParagraph">Task title *</p>
+                <input id="taskNameInput" type="text" placeholder="e.g. Do chores" required>
+                <p id="taskNameParagraph">Priority</p>
+                <select id="prioritySelect" required>
+                    <option value="">Select priority</option>
+                    <option value="lowPriority">Low priority</option>
+                    <option value="mediumPriority">Medium priority</option>
+                    <option value="highPriority">High priority</option>
+                </select>
+                <p id="taskNameParagraph">Schedule</p>
+                <input id="dateInput" type="date" required>
+                <p id="taskNameParagraph">Project *</p>
+                <select id="projectSelect">
+                    <option value="">Select project</option>
+                </select>
+                <div id="addTaskFormDown">
+                    <button id="closeTaskButton">Close</button>
+                    <button id="addTaskFinal">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+       <h1>My ToDo List</h1>
+    </header>
+    <div id="mainDiv">
+        <div id="leftNavDiv">
+            <ul id="navList">
+                <li class="listElement" id="list-inbox">
+                    <img id="listImg" src="images/inbox.png" alt="inbox img">
+                    <p id="listText">Inbox</p>
+                </li>
+                <li id="list-today" class="listElement">
+                    <img id="listImg" src="images/today.png" alt="today img">
+                    <p id="listText">Today</p>
+                </li>
+                <li id="list-week" class="listElement">
+                    <img id="listImg" src="images/week.png" alt="week img">
+                    <p id="listText">This week</p>
+                </li>
+                <li id="list-important" class="listElement">
+                    <img id="listImg" src="images/important.png" alt="important img">
+                    <p id="listText">Important</p>
+                </li>
+                <li id="list-completed" class="listElement">
+                    <img id="listImg" src="images/completed.png" alt="completed img">
+                    <p id="listText">Completed</p>
+                </li>
+            </ul>
+            <div id="projectsDiv">
+                <h3 id="projectsText">Projects</h3>
+                <button id="addBtn"><img id="addImg" src="images/add.png"></button>
+            </div>
+            <div id="listOfProjects">
+            
+            </div>
+
+        </div>
+        <div id="taskList">
+            <h1 id="taskHeader">Inbox</h1>
+                <div id="taskAdd">
+                    <img id="addImg" src="images/add.png">
+                    <p id="addNewTaskText">Add new task</p>
+                </div>
+            <div id="allTasks">
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h5>Built by: </h5>
+        <h4>DuleBondok</h4>
+    </footer>
+</body>
+</html>

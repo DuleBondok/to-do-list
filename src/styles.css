@@ -1,0 +1,924 @@
+@font-face {
+	font-family: 'FashionVictim';
+	src: url('./fonts/FashionVictim.woff');
+}
+
+@font-face {
+    font-family: "TheBlacklist";
+    src: url("./fonts/TheBlacklist.woff");
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+}
+
+header
+{
+    width: 100%;
+    height: 90px;
+    background-color: rgb(13, 99, 13);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+header h1
+{
+    margin-left: 40px;
+    font-size: 40px;
+    color: white;
+    font-family: FashionVictim;
+}
+
+#leftNavDiv
+{
+    height: 850px;
+    width: 330px;
+    background-color: rgb(216, 216, 216);
+}
+
+#navList
+{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+}
+
+.listElement
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    height: 60px;
+    gap: 20px;
+}
+
+.listElement:hover
+{
+    background-color: rgb(240, 239, 239);
+    border-radius: 20px;
+    border: 1px solid rgb(13, 99, 13);
+    cursor: pointer;
+}
+
+
+#listImg
+{
+    height: 35px;
+    width: auto;
+    margin-left: 30px;
+}
+
+#listText
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+}
+
+#projectsDiv
+{
+    border-bottom: 1px solid rgb(145, 145, 145);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 250px;
+    margin-left: 20px;
+    height: 50px;
+    margin-top: 30px;
+    gap: 130px;
+}
+
+#projectsText
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+}
+
+#addBtn
+{
+    border: none;
+    width: 40px;
+    height: 40px;
+    background-color:rgb(216, 216, 216) ;
+}
+
+
+#addImg
+{
+    width: 30px;
+    height: 30px;
+}
+
+#addImg:hover
+{
+    background-color: rgb(240, 239, 239);
+    border-radius: 20px;
+    border: 1px solid rgb(13, 99, 13);
+    cursor: pointer;
+}
+
+footer
+{
+    height: 33px;
+    background-color:rgb(13, 99, 13) ;
+    width: 281px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+footer h4
+{
+    font-family: TheBlacklist;
+    font-size: 25px;
+    color: rgb(216, 216, 216);
+}
+
+footer h5
+{
+    font-size: 18px;
+}
+
+#listOfProjects
+{
+    height: 300px;
+    width: 230px;
+    margin-left: 29px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+
+}
+
+#mainDiv
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#taskList
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+}
+
+#taskHeader
+{
+    margin-left: 50px;
+    margin-top: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(68, 68, 68);
+}
+
+#taskAdd 
+{
+    width: 90%;
+    height: 50px;
+    border-bottom: 1px solid rgb(145, 145, 145);
+    margin-left: 52px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: -1;
+}
+
+#taskAdd:hover
+{
+    background-color: rgb(216, 216, 216);
+    cursor: pointer;
+}
+
+#addNewTaskText
+{
+    margin-left: 18px;
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:rgb(68, 68, 68);
+}
+
+#addProjectDiv
+{
+    position: absolute;
+    width: 100%;
+    height: 117%;
+    background-color: rgba(22, 22, 22, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+#addProjectForm
+{
+    width: 350px;
+    height: 350px;
+    background-color: white;
+    border-radius: 10px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 200px;
+}
+
+#addProjectFormUpper
+{
+    height: 70px;
+    width: 100%;
+    background-color:rgb(13, 99, 13);
+}
+
+#newProjectParagraph
+{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    color: white;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+#addProjectFormMiddle
+{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+} 
+
+#projectNameParagraph
+{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    color: rgb(68, 68, 68);
+}
+
+#projectNameInput
+{
+    border: 1px solid rgb(161, 161, 161);
+    margin-left: 18px;
+    margin-top: 5px;
+    width: 300px;
+    height: 33px;
+    border-radius: 10px;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+#projectIconParagraph
+{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    color: rgb(68, 68, 68);
+}
+
+#projectIcons
+{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 300px;
+    margin-left: 20px;
+    margin-top: 5px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.allProjectIcons
+{
+    height: 35px;
+    background-color:rgb(221, 219, 219) ;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.allProjectIcons:hover
+{
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+#addProjectFormDown
+{
+    border-top: 1px solid rgb(207, 207, 207);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#closeProjectButton
+{
+    height: 40px;
+    width: 90px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 5px;
+    font-size: 18px;
+    border: 1px solid rgb(196, 196, 196);
+}
+
+#addProjectFinal
+{
+    height: 40px;
+    width: 90px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 5px;
+    font-size: 18px;
+    border: 1px solid rgb(196, 196, 196);
+    background-color:rgb(13, 99, 13) ;
+    color: white;
+}
+
+#closeProjectButton:hover
+{
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+#addProjectFinal:hover
+{
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+#homeIcon
+{
+    border: 1px solid black;
+}
+
+#addTaskDiv
+{
+    position: absolute;
+    width: 100%;
+    height: 117%;
+    background-color: rgba(22, 22, 22, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+#addTaskForm
+{
+    width: 350px;
+    height: 480px;
+    background-color: white;
+    border-radius: 10px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 250px;
+
+}
+
+#addTaskFormUpper
+{
+    height: 70px;
+    width: 100%;
+    background-color:rgb(13, 99, 13);
+}
+
+#newTaskParagraph
+{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    color: white;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+#addTaskFormMiddle
+{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+#taskNameParagraph
+{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    color: rgb(68, 68, 68);
+}
+
+#taskNameInput
+{
+    border: 1px solid rgb(161, 161, 161);
+    margin-left: 18px;
+    margin-top: 5px;
+    width: 300px;
+    height: 33px;
+    border-radius: 10px;
+    font-size: 20px;
+    padding-left: 10px;  
+}
+
+#prioritySelect
+{
+    border: 1px solid rgb(161, 161, 161);
+    margin-left: 18px;
+    margin-top: 5px;
+    width: 310px;
+    height: 33px;
+    border-radius: 10px;
+    font-size: 20px;
+    padding-left: 10px;  
+}
+
+#dateInput
+{
+    border: 1px solid rgb(161, 161, 161);
+    margin-left: 18px;
+    margin-top: 5px;
+    width: 300px;
+    height: 55px;
+    border-radius: 10px;
+    font-size: 20px;
+    padding-left: 10px;  
+}
+
+#projectSelect
+{
+    border: 1px solid rgb(161, 161, 161);
+    margin-left: 18px;
+    margin-top: 5px;
+    width: 310px;
+    height: 33px;
+    border-radius: 10px;
+    font-size: 20px;
+    padding-left: 10px;  
+}
+
+#addTaskFormDown
+{
+    border-top: 1px solid rgb(207, 207, 207);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+#closeTaskButton
+{
+    height: 40px;
+    width: 90px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 5px;
+    font-size: 18px;
+    border: 1px solid rgb(196, 196, 196);
+    margin-top: 20px;
+}
+
+#closeTaskButton:hover
+{
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+#addTaskFinal
+{
+    height: 40px;
+    width: 90px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 5px;
+    font-size: 18px;
+    border: 1px solid rgb(196, 196, 196);
+    background-color:rgb(13, 99, 13) ;
+    color: white;
+    margin-top: 20px;
+}
+
+#addTaskFinal:hover
+{
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+#newProjectDiv
+{
+    display: flex;
+    flex-direction: row;
+    width: 230px;
+    height: 50px;
+    margin-top: 5px;
+    align-items: center;
+}
+
+#newProjectDiv:hover
+{
+    background-color: rgb(240, 239, 239);
+    cursor: pointer;
+}
+
+#projectImg
+{
+    height: 35px;
+    background-color: rgb(226, 226, 226);
+    border-radius: 10px;
+    padding: 3px;
+}
+
+#projectName
+{
+    color: rgb(13, 99, 13) ;
+    margin-left: 10px;
+    font-size: 22px;
+}
+
+#projectName:hover
+{
+    text-decoration: underline;
+}
+
+#divForButtons
+{
+    height: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    gap: 6px;
+}
+
+#deleteAndEdit
+{
+    width: 20px;
+}
+
+#deleteAndEdit:hover
+{
+    background-color: rgb(167, 167, 167);
+}
+
+#editDiv
+{
+    position: absolute;
+    width: 100%;
+    height: 117%;
+    background-color: rgba(22, 22, 22, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+#editDivForm
+{
+    width: 350px;
+    height: 350px;
+    background-color: white;
+    border-radius: 10px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 200px;
+}
+
+#editDivFormUpper
+{
+    height: 70px;
+    width: 100%;
+    background-color:rgb(13, 99, 13);
+}
+
+#editDivFormMiddle
+{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+#editNameInput
+{
+    border: 1px solid rgb(161, 161, 161);
+    margin-left: 18px;
+    margin-top: 5px;
+    width: 300px;
+    height: 33px;
+    border-radius: 10px;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.editIcons
+{
+    height: 35px;
+    background-color:rgb(221, 219, 219) ;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.editIcons:hover
+{
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+#editCancelButton
+{
+    height: 40px;
+    width: 90px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 5px;
+    font-size: 18px;
+    border: 1px solid rgb(196, 196, 196);
+}
+
+#editCancelButton:hover
+{
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+#editButtonFinal
+{
+    height: 40px;
+    width: 90px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 5px;
+    font-size: 18px;
+    border: 1px solid rgb(196, 196, 196);
+    background-color:rgb(13, 99, 13) ;
+    color: white;
+}
+
+#editButtonFinal:hover
+{
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+#allTasks
+{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+    margin-top: 20px;
+    gap: 20px;
+    align-items: center;
+}
+
+#newTaskDiv
+{
+    border-bottom: 1px solid rgb(209, 209, 209);
+    height: 70px;
+    width: 92%;
+    z-index: 2;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#newTaskDivLeft
+{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    gap: 20px;
+}
+
+#newTaskDivRight
+{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    gap: 20px;
+    justify-content: right;
+}
+
+#priorityImg
+{
+    width: 40px;
+}
+
+#taskHeading
+{
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#closeTaskBtn
+{
+    width: 40px;
+}
+
+#closeTaskBtn:hover
+{
+    border: 1px solid rgb(185, 185, 185);
+    background-color: rgb(214, 213, 213);
+    cursor: pointer;
+}
+
+#editTaskBtn
+{
+    width: 40px;
+}
+
+#editTaskBtn:hover
+{
+    border: 1px solid rgb(185, 185, 185);
+    background-color: rgb(214, 213, 213);
+    cursor: pointer;
+}
+
+#taskProjectChoice
+{
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 10px;
+    background-color: aqua;
+    padding: 5px;
+}
+
+#taskDate
+{
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 10px;
+    background-color: rgb(13, 99, 13);
+    padding: 5px;
+    color: white;
+}
+
+#editTaskDiv
+{
+    position: absolute;
+    width: 100%;
+    height: 117%;
+    background-color: rgba(22, 22, 22, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+#editTaskDivForm
+{
+    width: 350px;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 200px;
+}
+
+#editTaskDivFormUpper
+{
+    height: 70px;
+    width: 100%;
+    background-color:rgb(13, 99, 13);
+}
+
+#editTaskDivParagraph
+{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    color: white;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+#editTaskDivFormMiddle
+{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+#editNameParagraph
+{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    color: rgb(68, 68, 68);
+}
+
+#editTaskInput
+{
+    border: 1px solid rgb(201, 200, 200);
+    margin-left: 18px;
+    margin-top: 5px;
+    width: 300px;
+    height: 33px;
+    border-radius: 10px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+#editTaskPriorityInput
+{
+    border: 1px solid rgb(161, 161, 161);
+    margin-left: 18px;
+    margin-top: 5px;
+    width: 310px;
+    height: 33px;
+    border-radius: 10px;
+    font-size: 20px;
+    padding-left: 10px;  
+}
+
+#editTaskScheduleSelect
+{
+    border: 1px solid rgb(161, 161, 161);
+    margin-left: 18px;
+    margin-top: 5px;
+    width: 300px;
+    height: 55px;
+    border-radius: 10px;
+    font-size: 20px;
+    padding-left: 10px;  
+}
+
+#editTaskFormDown
+{
+    border-top: 1px solid rgb(207, 207, 207);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+#editTaskFormCloseBtn
+{
+    height: 40px;
+    width: 90px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 5px;
+    font-size: 18px;
+    border: 1px solid rgb(196, 196, 196);
+    margin-top: 20px;
+}
+
+#editTaskFormCloseBtn:hover
+{
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+#editTaskFormEditBtn
+{
+    height: 40px;
+    width: 90px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 5px;
+    font-size: 18px;
+    border: 1px solid rgb(196, 196, 196);
+    background-color:rgb(13, 99, 13) ;
+    color: white;
+    margin-top: 20px;
+}
+
+#editTaskFormEditBtn:hover
+{
+    cursor: pointer;
+    border: 1px solid black;
+}
